@@ -2,13 +2,19 @@
     "version": 2,
     "public": true,
     "name": "Downtownfest",
-    "builds": [
+    "rewrites": [
         {
-        "src": "server.mjs",
+            "source": "/(.*)",
+            "destination": "dist/downtownfest/server/server.mjs"
+        }
+    ],
+    "builds": [
+      {
+        "src": "dist/downtownfest/server/server.mjs",
         "use": "@vercel/node"
       },
       {
-        "src": "dist/browser/**/*",
+        "src": "dist/downtownfest/browser/**/*",
         "use": "@vercel/static",
         "config": {
           "headers": [
@@ -27,3 +33,5 @@
     ],
     "devCommand": "node dist/downtownfest/server/server.mjs"
 }
+
+  
