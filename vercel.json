@@ -2,14 +2,8 @@
     "version": 2,
     "public": true,
     "name": "Downtownfest",
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "dist/downtownfest/server/server.mjs"
-        }
-    ],
     "builds": [
-      {
+        {
         "src": "server.mjs",
         "use": "@vercel/node"
       },
@@ -31,7 +25,6 @@
         }
       }
     ],
-    "devCommand": "node dist/downtownfest/server/server.mjs"
+    "devCommand": "node dist/downtownfest/server/server.mjs",
+    "function": {}
 }
-
-  
