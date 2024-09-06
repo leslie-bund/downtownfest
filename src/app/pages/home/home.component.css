@@ -1,0 +1,95 @@
+.topHead {
+    background: url("/Frame\ 58.svg") no-repeat center/cover;
+    background-color: black;
+  }
+  .navLink:hover {
+    text-shadow: 0px 2px 8px white;
+  }
+  .bookBadge {
+    background: url("/Group\ 39264.svg") no-repeat;
+    width: 187px;
+    height: 125px;
+  }
+  .line-up-grid {
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+    gap: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    text-align: justified;
+  }
+  .intro {
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+    gap: 1rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    text-align: justified;
+  }
+  @media screen and (min-width: 900px) {
+    .intro {
+      grid-template-columns: 1.5fr 1fr;
+    }
+    .line-up-grid {
+      grid-template-columns: 1fr 1.5fr;
+    }
+  }
+  .dateBox {
+    background-image: url("/Group\ 1527.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* width: 187px;
+    height: 125px; */
+  }
+  .slated {
+    background-image: url("/Rectangle.png");
+    background-color: #0f172a;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* width: 187px;
+    height: 125px; */
+  }
+  .slated-2 {
+    background: url("/Rectangle2.png") no-repeat center/cover,
+      url("/Frame\ 59.svg") no-repeat center/cover;
+    background-blend-mode: difference;
+  }
+  
+  .folder-head {
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+    grid-template-columns: 1fr 2fr 8fr;
+  }
+  .folder-head-3 {
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+    grid-template-columns: 8fr 1fr 2fr ;
+  }
+  
+  .folder-head-2 {
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+    grid-template-columns: 5fr 2fr 4fr;
+  }
+  .inner-shadow {
+    box-shadow: 0.5px -3px 3px #0f172a inset;
+  }
+  .outer-shadow {
+    box-shadow: 0px -2px 2px 3px #10192d;
+  }
+  .pill {
+    @apply text-black font-black bg-yellow-500 px-2 py-1  rounded-full uppercase;
+  }
+  .drop-text {
+    letter-spacing: 1px;
+    text-shadow: 0px 9px 4px #8d9327;
+  }
