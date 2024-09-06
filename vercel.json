@@ -1,6 +1,37 @@
 {
     "version": 2,
     "public": true,
-    "name": "Downtown Fest",
+    "name": "Downtownfest",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "dist/downtownfest/server/server.mjs"
+        }
+    ],
+    "builds": [
+      {
+        "src": "server.mjs",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "dist/browser/**/*",
+        "use": "@vercel/static",
+        "config": {
+          "headers": [
+            {
+              "source": "/(.*)",
+              "headers": [
+                {
+                  "key": "Cache-Control",
+                  "value": "max-age=0, s-maxage=86400, stale-while-revalidate"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
     "devCommand": "node dist/downtownfest/server/server.mjs"
 }
+
+  
