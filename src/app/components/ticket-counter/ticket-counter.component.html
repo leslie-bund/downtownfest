@@ -1,0 +1,32 @@
+<div class="flex justify-between">
+  <div class="flex items-start gap-4">
+    <img src="/Vector (2).svg" class="mt-2" alt="" />
+    <div class="flex flex-col gap-2 text-yellow-300">
+      <span class="font-extrabold text-balance text-lg"
+        >{{ title.split("-")[0]
+        }}<span class="text-white">{{ title.split("-")[1] }}:</span></span
+      >
+      <span>{{ price | currency : "₦" }}</span>
+    </div>
+  </div>
+  <div class="flex items-center gap-2 max-w-16">
+    <button
+      type="button"
+      (click)="
+        [
+          counter > 0 ? (counter = counter - 1) : null,
+          onCounterChange.emit(counter * price)
+        ]
+      "
+    >
+      <img src="/amount_control1.svg" alt="button" />
+    </button>
+    <span class="text-white font-bold text-2xl">{{ counter }}</span>
+    <button
+      type="button"
+      (click)="[(counter = counter + 1), onCounterChange.emit(counter * price)]"
+    >
+      <img src="/amount_control2.svg" alt="button" />
+    </button>
+  </div>
+</div>

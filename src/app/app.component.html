@@ -1,0 +1,535 @@
+<!-- <style>
+  :host {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+    --electric-violet: oklch(53.18% 0.28 296.97);
+    --french-violet: oklch(47.66% 0.246 305.88);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --hot-red: oklch(61.42% 0.238 15.34);
+    --orange-red: oklch(63.32% 0.24 31.68);
+
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
+
+    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+      180deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+      90deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --pill-accent: var(--bright-blue);
+
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* h1 {
+    font-size: 3.125rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  } */
+
+  p {
+    margin: 0;
+    color: var(--gray-700);
+  }
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .angular-logo {
+    max-width: 9.2rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+
+  .content h1 {
+    margin-top: 1.75rem;
+  }
+
+  .content p {
+    margin-top: 1.5rem;
+  }
+
+  .divider {
+    width: 1px;
+    background: var(--red-to-pink-to-purple-vertical-gradient);
+    margin-inline: 0.5rem;
+  }
+
+  .pill-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .pill {
+    display: flex;
+    align-items: center;
+    --pill-accent: var(--bright-blue);
+    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
+    color: var(--pill-accent);
+    padding-inline: 0.75rem;
+    padding-block: 0.375rem;
+    border-radius: 2.75rem;
+    border: 0;
+    transition: background 0.3s ease;
+    font-family: var(--inter-font);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4rem;
+    letter-spacing: -0.00875rem;
+    text-decoration: none;
+  }
+
+  .pill:hover {
+    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+  }
+
+  .pill-group .pill:nth-child(6n + 1) {
+    --pill-accent: var(--bright-blue);
+  }
+  .pill-group .pill:nth-child(6n + 2) {
+    --pill-accent: var(--french-violet);
+  }
+  .pill-group .pill:nth-child(6n + 3),
+  .pill-group .pill:nth-child(6n + 4),
+  .pill-group .pill:nth-child(6n + 5) {
+    --pill-accent: var(--hot-red);
+  }
+
+  .pill-group svg {
+    margin-inline-start: 0.25rem;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.73rem;
+    margin-top: 1.5rem;
+  }
+
+  .social-links path {
+    transition: fill 0.3s ease;
+    fill: var(--gray-400);
+  }
+
+  .social-links a:hover svg path {
+    fill: var(--gray-900);
+  }
+
+  @media screen and (max-width: 650px) {
+    .content {
+      flex-direction: column;
+      width: max-content;
+    }
+
+    .divider {
+      height: 1px;
+      width: 100%;
+      background: var(--red-to-pink-to-purple-horizontal-gradient);
+      margin-block: 1.5rem;
+    }
+  }
+</style> -->
+<div class="topHead w-full">
+  <div class="nav flex justify-center items-center py-3">
+    <div
+      class="text-white hidden sm:block cursor-pointer hover:text-yellow-300 navLink me-7"
+    >
+      Past Fests
+    </div>
+    <div
+      class="text-white hidden sm:block cursor-pointer hover:text-yellow-300 navLink"
+    >
+      Tickets
+    </div>
+    <img src="/dtf-logo.jpg" alt="logo" class="w-14 mx-10" />
+    <div
+      class="text-white hidden sm:block cursor-pointer hover:text-yellow-300 navLink me-7"
+    >
+      Line ups
+    </div>
+    <div
+      class="text-white hidden sm:block cursor-pointer hover:text-yellow-300 navLink"
+    >
+      Contact
+    </div>
+  </div>
+  <div class="relative">
+    <img src="/Group 39311.svg" class="mx-auto" alt="" />
+    <div
+      class="absolute -bottom-10 md:bottom-20 left-1/3 md:left-1/2 -translate-x-8 md:-translate-x-full bookBadge flex justify-center items-center"
+    >
+      <!-- <img src="/Group 39264.svg" alt="" /> -->
+      <span class="underline underline-offset-2 font-bold">BOOK NOW</span>
+    </div>
+  </div>
+  <div class="intro mt-24 text-white pb-6 px-6 md:px-28">
+    <div
+      class="bg-purple-950 text-balance bg-opacity-70 subpixel-antialiased leading-6 px-4 md:px-8 py-4 rounded-3xl sm:flex text-sm"
+    >
+      <div class="w-20 overflow-visible mb-16">
+        <div
+          class="-ms-12 -mt-10 font-extrabold sideWays text-black uppercase -rotate-90 bg-yellow-300 rounded-full whitespace-nowrap px-4 h-10 w-fit flex items-center"
+        >
+          Experience Now
+        </div>
+      </div>
+      <div>
+        Downtown, Fest is not your average shindig; it's the ultimate bash that
+        brings the mainland and island's finest under one roof for an epic
+        fusion of entertainment, mingling, and pure celebration vibes. Picture
+        this: a swanky outdoor fiesta where the who's who gather to groove to
+        A-list beats, savor delicious bites, sip on fancy drinks, and revel in
+        top-notch performances. It's the place to see and be seen, where the fun
+        never stops, and the memories are always legendary!
+      </div>
+    </div>
+    <div
+      class="bg-purple-950 bg-opacity-70 px-4 md:px-8 py-4 flex flex-col gap-7 justify-around rounded-3xl dateBox"
+    >
+      <span class="font-extrabold">September 2024</span>
+
+      <div class="flex justify-between items-center mt-2">
+        <div
+          class="w-20 h-20 rounded-2xl text-center font-black text-5xl flex items-center justify-center text-white bg-pink-500 origin-top -rotate-6"
+        >
+          13
+        </div>
+        <div
+          class="w-20 h-20 rounded-2xl text-center font-black text-5xl flex items-center justify-center text-white bg-blue-700 rotate-12"
+        >
+          09
+        </div>
+        <div
+          class="w-20 h-20 rounded-2xl text-center font-black text-5xl flex items-center justify-center text-white bg-yellow-300 -rotate-12"
+        >
+          24
+        </div>
+      </div>
+
+      <div class="flex font-extrabold subpixel-antialiased uppercase">
+        <img src="/material-symbols_location-on-outline.svg" alt="location" />
+        NSUKU beach house
+      </div>
+    </div>
+  </div>
+  <div class="py-14"></div>
+</div>
+<div class="">
+  <div class="folder-head slated h-10">
+    <div class="rounded-br-2xl inner-shadow bg-black"></div>
+    <div
+      class="border-t slated rounded-t-2xl h-12 -mt-4 px-3 pt-4 outer-shadow"
+    >
+      <div
+        class="rounded-md whitespace-nowrap md:w-52 p-3 bg-pink-500 text-black font-bold text-center skew-x-6 mx-2"
+      >
+        01 // Show Reel
+      </div>
+    </div>
+    <div class="rounded-bl-2xl inner-shadow bg-black"></div>
+  </div>
+  <div class="relative slated z-10 pb-24">
+    <div
+      class="pb-14 pt-10 md:pt-14 ps-8 md:ps-14 text-3xl md:text-8xl"
+      style="font-weight: 900; letter-spacing: 0.45rem"
+    >
+      <span class="text-pink-500 uppercase">show </span>
+      <span class="text-blue-500 uppercase">reel</span>
+    </div>
+    <div>
+      <video autoplay controls loop width="100%">
+        <source src="/reels.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <br />
+      <div
+        class="px-6 py-2 mx-4 sm:mx-auto sm:max-w-2xl md:font-black bg-pink-500 text-white relative flex justify-between uppercase rounded-full"
+      >
+        <!-- style="font-size: 2.43rem; font-weight: 600" -->
+        <div class="flex">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.9229 10.7893C11.4093 10.7893 11.8258 10.616 12.1725 10.2693C12.5186 9.92321 12.6917 9.50696 12.6917 9.02056C12.6917 8.53415 12.5186 8.11761 12.1725 7.77093C11.8258 7.42485 11.4093 7.25181 10.9229 7.25181C10.4365 7.25181 10.0202 7.42485 9.67416 7.77093C9.32749 8.11761 9.15415 8.53415 9.15415 9.02056C9.15415 9.50696 9.32749 9.92321 9.67416 10.2693C10.0202 10.616 10.4365 10.7893 10.9229 10.7893ZM10.9229 17.2895C12.7211 15.6386 14.0551 14.1387 14.9247 12.7898C15.7943 11.4414 16.2291 10.2439 16.2291 9.19743C16.2291 7.59082 15.7168 6.27516 14.6921 5.25047C13.668 4.22636 12.4116 3.71431 10.9229 3.71431C9.4342 3.71431 8.17751 4.22636 7.15281 5.25047C6.1287 6.27516 5.61665 7.59082 5.61665 9.19743C5.61665 10.2439 6.05147 11.4414 6.9211 12.7898C7.79074 14.1387 9.12467 15.6386 10.9229 17.2895ZM10.9229 19.6331C8.54983 17.6137 6.77754 15.738 5.60604 14.0058C4.43395 12.2742 3.8479 10.6714 3.8479 9.19743C3.8479 6.98649 4.55923 5.22511 5.9819 3.91329C7.40397 2.60147 9.05097 1.94556 10.9229 1.94556C12.7948 1.94556 14.4418 2.60147 15.8639 3.91329C17.2866 5.22511 17.9979 6.98649 17.9979 9.19743C17.9979 10.6714 17.4121 12.2742 16.2406 14.0058C15.0686 15.738 13.296 17.6137 10.9229 19.6331Z"
+              fill="white"
+            />
+          </svg>
+          nsuku beach
+        </div>
+        <div>13/09/2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="">
+  <div class="folder-head-2 slated-2 h-10">
+    <div
+      class="rounded-br-2xl inner-shadow from-black slated bg-gradient-to-t to-transparent"
+    ></div>
+    <div
+      class="border-t slated-2 relative z-10 rounded-t-2xl h-12 -mt-4 px-3 pt-4"
+    >
+      <div
+        class="rounded-md whitespace-nowrap md:w-52 p-3 bg-yellow-500 text-black font-bold text-center skew-x-6 mx-2"
+      >
+        02 // Past Fests
+      </div>
+    </div>
+    <div
+      class="rounded-bl-2xl inner-shadow from-black slated bg-gradient-to-t to-transparent"
+    ></div>
+  </div>
+  <div class="slated-2 relative z-10 px-6 md:px-28 pt-6 md:py-16">
+    <div class="text-yellow-500 max-w-screen-md mx-auto text-center">
+      <h1
+        class="uppercase font-black text-4xl text-balance md:text-7xl lg:whitespace-nowrap"
+      >
+        through the years
+      </h1>
+      <p class="text-balance text-xs md:text-base my-2">
+        Picture this: a swanky outdoor fiesta where the who's who gather to
+        groove to A-list beats, savor delicious bites, sip on fancy drinks, and
+        revel in top-notch performances. It's the place to see and be seen,
+        where the fun never stops, and the memories are always legendary!
+      </p>
+    </div>
+    <div
+      class="md:w-4/5 mx-auto flex justify-between md:justify-around my-6 md:my-10 font-medium text-sm"
+    >
+      <div class="pill">2023</div>
+      <div class="pill">2024</div>
+      <div class="pill">tbd</div>
+      <div class="pill">tbd</div>
+      <div class="pill">tbd</div>
+    </div>
+    <div
+      class="flex items-center h-96 mt-4"
+      [ngStyle]="{ 'background-image': gallery[activeImage] }"
+      style="
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+      "
+    >
+      <div
+        class="w-full relative z-10 flex justify-between items-center px-2 md:px-6 font-black text-2xl text-yellow-300"
+      >
+        <div class="cursor-pointer flex justify-center item w-16 h-16">
+          <button
+            (click)="
+              [
+                (activeImage =
+                  activeImage > 0 ? (activeImage - 1) % gallery.length : 0)
+              ]
+            "
+            class="rotate-45 origin-center"
+          >
+            ∟
+          </button>
+        </div>
+        <div class="cursor-pointer flex justify-center item w-16 h-16">
+          <button
+            (click)="[(activeImage = (activeImage + 1) % gallery.length)]"
+            class="align-middle origin-center -rotate-135 -mb-3"
+            dir="ltr"
+          >
+            ∟
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="pb-10 md:pb-12">
+      <div class="my-6 md:my-14 flex justify-center items-center gap-8">
+        <button
+          class="bg-pink-500 px-4 py-1 active:bg-pink-700 hover:bg-pink-600 text-white rounded-full whitespace-nowrap uppercase font-bold md:text-lg"
+        >
+          Line up</button
+        ><button
+          class="bg-pink-500 px-4 py-1 active:bg-pink-700 hover:bg-pink-600 text-white rounded-full whitespace-nowrap uppercase font-bold md:text-lg"
+        >
+          gallery
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="">
+  <div class="folder-head slated h-10">
+    <div class="rounded-br-2xl inner-shadow slated-2"></div>
+    <div
+      class="border-t relative z-10 slated rounded-t-2xl h-12 -mt-4 px-3 pt-4 outer-shadow"
+    >
+      <div
+        class="rounded-md whitespace-nowrap md:w-52 p-3 bg-pink-500 text-black font-bold text-center skew-x-6 mx-2"
+      >
+        3&nbsp;\\&nbsp;Buy Tickets Here
+      </div>
+    </div>
+    <div class="rounded-bl-2xl inner-shadow slated-2 bg-right-top"></div>
+  </div>
+  <div class="slated relative z-10 text-white p-10 md:p-14">
+    <div class="md:w-4/5 mx-auto">
+      @for (item of tickets; track $index) {
+      <ticket-counter
+        [price]="item.price"
+        [title]="item.title"
+        (onCounterChange)="amounts[$index] = $event"
+      ></ticket-counter>
+      <br />
+      }
+      <div
+        class="flex justify-end text-yellow-300 font-extrabold text-xl md:text-3xl"
+      >
+        Total:&nbsp;<span class="text-3xl md:text-6xl">{{
+          amounts.reduce(sum, 0) | currency : "₦"
+        }}</span>
+      </div>
+      <div class="h-60">
+        <div *ngIf="amounts.reduce(sum, 0) > 1000">
+          <br />
+          <form #form="ngForm" >
+            <div class="grid gap-6 md:flex md:justify-center md:items-center">
+              <input
+              type="email"
+              ngModel
+              name="email"
+              email
+              required
+              placeholder="Email required"
+              class="rounded px-3 py-2 bg-transparent placeholder:text-yellow-700 border border-yellow-300 caret-yellow-300 text-yellow-300"
+              />
+              <input
+              type="text"
+              ngModel
+              required
+              name="name"
+              minlength="3"
+              placeholder="Hood name required"
+              class="rounded px-3 py-2 bg-transparent placeholder:text-yellow-700 border border-yellow-300 caret-yellow-300 text-yellow-300"
+              />
+              <input
+              type="tel"
+              ngModel
+              name="phone_number"
+              required
+              minlength="11"
+              placeholder="Phone number required"
+              class="rounded px-3 py-2 bg-transparent placeholder:text-yellow-700 border border-yellow-300 caret-yellow-300 text-yellow-300"
+              />
+            </div>
+
+          </form>
+          <br>
+          <flutterwave-make-payment [data]="paymentData(form.value)" *ngIf="!form.invalid" >
+          </flutterwave-make-payment>
+          <!-- <button
+          (click)="pay()"
+          class="rounded px-3 py-2 bg-yellow-300 text-black font-bold text-base uppercase"
+        >
+          Buy now!!
+        </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="">
+  <div class="folder-head-3 bg-blue-950 h-10">
+    <div class="rounded-br-2xl inner-shadow slated"></div>
+    <div
+      class="border-t bg-blue-950 rounded-t-2xl h-12 -mt-4 px-3 pt-4 outer-shadow relative z-10"
+    >
+      <div
+        class="rounded-md whitespace-nowrap md:w-52 p-3 bg-pink-500 text-black font-bold text-center skew-x-6 mx-2"
+      >
+        04&nbsp;//&nbsp;Line up
+      </div>
+    </div>
+    <div class="rounded-bl-2xl inner-shadow slated"></div>
+  </div>
+  <div class="p-6 md:p-14 bg-blue-950 relative z-10">
+    <div class="line-up-grid">
+      <div>
+        <div class="rounded-lg p-6 h-80 bg-opacity-10 bg-gradient-to-b from-slate-700 to-transparent">
+          <p class="text-yellow-300 font-bold drop-text">Artists</p>
+        </div>
+      </div>
+      <div class="border"></div>
+    </div>
+  </div>
+</div>
+<div class="">
+  <div class="folder-head-2 slated h-10">
+    <div class="rounded-br-2xl inner-shadow bg-blue-950"></div>
+    <div
+      class="border-t slated relative z-10 rounded-t-2xl h-12 -mt-4 px-3 pt-4 outer-shadow"
+    >
+      <div
+        class="rounded-md whitespace-nowrap md:w-52 p-3 bg-yellow-300 text-black font-bold text-center skew-x-6 mx-2"
+      >
+        05&nbsp;//&nbsp;Contact
+      </div>
+    </div>
+    <div class="rounded-bl-2xl inner-shadow bg-blue-950"></div>
+  </div>
+  <div
+    class="slated relative z-10 text-yellow-300 py-10 md:py-14 px-8 sm:px-10 md:px-96"
+  >
+    <div
+      class="text-3xl font-black sm:flex gap-8 justify-center items-center mb-3"
+    >
+      <img src="/image 168.svg" loading="lazy" alt="camm" />
+      Hit us up for any inquiries.
+    </div>
+    <button
+      class="rounded-full px-3 py-2 bg-yellow-300 text-black font-bold text-xl uppercase w-full"
+    >
+      contact us
+    </button>
+  </div>
+</div>
+
+<!-- <router-outlet /> -->
