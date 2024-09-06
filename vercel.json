@@ -25,5 +25,5 @@
         }
       }
     ],
-    "devCommand": "node dist/downtownfest/server/server.mjs",
+    "devCommand": "node dist/downtownfest/server/server.mjs"
 }
