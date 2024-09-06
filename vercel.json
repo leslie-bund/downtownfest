@@ -8,29 +8,6 @@
             "destination": "dist/downtownfest/server/server.mjs"
         }
     ],
-    "builds": [
-      {
-        "src": "dist/downtownfest/server/server.mjs",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "dist/downtownfest/browser/**/*",
-        "use": "@vercel/static",
-        "config": {
-          "headers": [
-            {
-              "source": "/(.*)",
-              "headers": [
-                {
-                  "key": "Cache-Control",
-                  "value": "max-age=0, s-maxage=86400, stale-while-revalidate"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    ],
     "devCommand": "node dist/downtownfest/server/server.mjs"
 }
 
