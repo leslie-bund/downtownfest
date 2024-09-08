@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MakePaymentComponent, FlutterwaveService, PaymentSuccessResponse, InlinePaymentOptions } from 'flutterwave-angular-v3';
 import { TicketCounterComponent } from '../../components/ticket-counter/ticket-counter.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ import { TicketCounterComponent } from '../../components/ticket-counter/ticket-c
     NgStyle,
     MakePaymentComponent,
     FormsModule,
+    RouterLink,
   ],
   providers: [FlutterwaveService],
   templateUrl: './home.component.html',
