@@ -6,7 +6,10 @@
         >{{ title.split("-")[0]
         }}<span class="text-white">{{ title.split("-")[1] }}:</span></span
       >
-      <span>{{ price | currency : "₦" }}</span>
+      <span>
+        <s>{{ price | currency : "₦" }}</s>
+        &nbsp;Free
+      </span>
     </div>
   </div>
   <div class="flex items-center gap-2 max-w-16">

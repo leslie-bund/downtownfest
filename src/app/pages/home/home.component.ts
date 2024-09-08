@@ -1,5 +1,5 @@
 import { CurrencyPipe, NgIf, NgStyle } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MakePaymentComponent, FlutterwaveService, PaymentSuccessResponse, InlinePaymentOptions } from 'flutterwave-angular-v3';
 import { TicketCounterComponent } from '../../components/ticket-counter/ticket-counter.component';
@@ -19,13 +19,19 @@ import { TicketCounterComponent } from '../../components/ticket-counter/ticket-c
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
   constructor(
     private flutterwaveService: FlutterwaveService,
   ) {}
 
+  ngOnInit(): void {
+    this.activeGallery = this.gallery
+  }
+
   title = 'Downtown, Fest👑';
+
+  activeGallery!: string[]
 
   tickets = [
     {
@@ -52,6 +58,24 @@ export class HomeComponent {
     "url('/gallery/3.jpg')",
   ];
 
+  lineUp = [
+    "url('/gallery/lineup/six7even.jpg')",
+    "url('/gallery/lineup/Poskidoo.jpg')",
+    "url('/gallery/lineup/loye.jpg')",
+    "url('/gallery/lineup/djBlondie.jpg')",
+    "url('/gallery/lineup/djBiosky.jpg')",
+    "url('/gallery/lineup/c-mart.jpg')",
+    "url('/gallery/lineup/arizonaWave.jpg')",
+  ];
+
+  sponsors = [
+    '/sponsors/94(dot)5.jpg',
+    '/sponsors/city105(dot)1.jpg',
+    '/sponsors/HipTv.jpg',
+    '/sponsors/PalmAfrika.jpg',
+    '/sponsors/elCarnaval.jpg',
+  ]
+
   activeImage = 0;
 
   amounts = [0, 0, 0, 0];
@@ -64,7 +88,7 @@ export class HomeComponent {
   customizations = {
     title: "Downtown Fest👑",
     description: `Not your average shindig  - D.K (host)`,
-    logo: "/favicon.png",
+    logo: "/public/favicon.png",
   };
 
   // meta = { counsumer_id: "7898", consumer_mac: "kjs9s8ss7dd" };
@@ -92,6 +116,7 @@ export class HomeComponent {
   }
   closedPaymentModal(): void {
     console.log("payment is closed");
+    this.amounts = [0, 0, 0, 0];
   }
   generateReference(): string {
     let date = new Date();

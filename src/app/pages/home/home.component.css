@@ -93,3 +93,10 @@
     letter-spacing: 1px;
     text-shadow: 0px 9px 4px #8d9327;
   }
+  .headline-artist {
+    background-image: url('/Dope_Ceasar.png'), linear-gradient(#334155, transparent);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    min-height: 38rem;
+  }

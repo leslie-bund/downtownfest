@@ -1,33 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Downtown, Fest🎉</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <title>Lagos Mainland to Island party</title> -->
+  <head>
+    <meta charset="utf-8" />
+    <title>Downtown, Fest🎉</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <title>Lagos Mainland to Island party</title> -->
 
+    <meta
+      name="description"
+      content="It's the ultimate bash that brings the mainland and island's finest under one roof for an epic fusion of entertainment, mingling, and pure celebration vibes"
+    />
+    <meta property="og:url" content="https://downtownfest.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/gallery/2.jpg" /> 
+    <meta property="og:title" content="Downtown, Fest🎉" />
+    <meta
+      property="og:description"
+      content="It's the place to see and be seen, where the fun never stops, and the memories are always legendary!"
+    />
 
-  <meta name="description" content="It's the ultimate bash that brings the mainland and island's finest under one roof for an epic fusion of entertainment, mingling, and pure celebration vibes" />
-  <!-- <meta property="og:url" content="http://www.YourSite.com/YourPage.html" /> -->
-  <meta property="og:type" content="website" />
-  <!-- <meta property="og:image" content="http://www.YourSite.com/Your-Image.jpg" />  -->
-  <meta property="og:title" content="Downtown, Fest🎉" /> 
-  <meta property="og:description" content="It's the place to see and be seen, where the fun never stops, and the memories are always legendary!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <meta name="twitter:site" content="@YourSite'sTwitterHandle"> -->
+    <meta name="twitter:creator" content="@bund_cc" />
+    <meta name="twitter:title" content="Downtown, Fest🎉" />
+    <meta
+      name="twitter:description"
+      content="It's the place to see and be seen, where the fun never stops, and the memories are always legendary!"
+    />
+    <meta name="twitter:image" content="/gallery/2.jpg">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- <meta name="twitter:site" content="@YourSite'sTwitterHandle"> -->
-  <meta name="twitter:creator" content="@bund_cc">
-  <meta name="twitter:title" content="Downtown, Fest🎉">
-  <meta name="twitter:description" content="It's the place to see and be seen, where the fun never stops, and the memories are always legendary!">
-  <!-- <meta name="twitter:image" content="http://www.YourSite.com/Your-Image.jpg"> -->
-
-
-  <link rel="icon" type="image/x-icon" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "467164691389772");
+      fbq("track", "PageView");
+    </script>
+    
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=467164691389772&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
 </html>
